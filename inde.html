@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF İndirme Sayfası</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-image: url('images/arkaplan.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        h1, p {
+            background-color: white;
+            display: inline-block;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        img {
+            width: 200px;
+            margin: 20px 0;
+        }
+        .download-link img {
+            width: 150px; /* Logo boyutu */
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>PDF'yi İndirmek İçin QR Kodu Tarayın</h1>
+    <img src="pdf_qr_code.png" alt="QR Kod">
+    <p>Veya aşağıdaki YASA logosuna basarak PDF'yi indirebilirsiniz:</p>
+    <a class="download-link" href="https://drive.google.com/file/d/1QxOOnTLhQyuwQ6ksSn7L-SAW4HWkO-TC/view?usp=drive_link" target="_blank">
+        <img src="images/yasa_logo.png" alt="YASA Logosu">
+    </a>
+</body>
+</html>
