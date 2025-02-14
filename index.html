@@ -5,14 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PDF İndirme Sayfası</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            padding: 20px;
-            background-image: url('images/arkaplan.jpg');
+            background: url('images/arkaplan.jpg') no-repeat center center fixed;
             background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; /* Yazıları en alta al */
+            align-items: center;
+            padding-bottom: 20px; /* Sayfanın altına boşluk bırak */
         }
         .text-box {
             background-color: white;
@@ -20,23 +28,18 @@
             padding: 10px 20px;
             border-radius: 10px;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-        }
-        img {
-            width: 200px;
-            margin: 20px 0;
+            margin-bottom: 10px;
         }
         .download-logo img {
-            width: 150px; /* Logo boyutu */
+            width: 200px; /* Logoyu büyüttüm */
             cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <h1 class="text-box">PDF'yi İndirmek İçin QR Kodu Tarayın</h1>
-    <img src="pdf_qr_code.png" alt="QR Kod">
-    <p class="text-box">Veya aşağıdaki YASA logosuna basarak PDF'yi indirebilirsiniz:</p>
     <a class="download-logo" href="https://drive.google.com/file/d/1QxOOnTLhQyuwQ6ksSn7L-SAW4HWkO-TC/view?usp=drive_link" target="_blank">
         <img src="images/yasa.jpg" alt="YASA Logosu">
     </a>
+    <h1 class="text-box">PDF'yi İndirmek İçin YASA Logosuna Tıklayın</h1>
 </body>
 </html>
