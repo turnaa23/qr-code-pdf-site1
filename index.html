@@ -14,9 +14,9 @@
             background-position: center;
             background-repeat: no-repeat;
         }
-        h1, p, a {
-            background-color: white; /* Beyaz arka plan */
-            display: inline-block; /* Yazının etrafında beyaz kutu */
+        h1, p {
+            background-color: white;
+            display: inline-block;
             padding: 10px;
             margin: 10px 0;
         }
@@ -24,22 +24,18 @@
             width: 200px;
             margin: 20px 0;
         }
-        a {
-            font-size: 18px;
-            color: #007bff;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        a:hover {
-            background-color: #0056b3;
-            color: white;
+        .download-link img {
+            width: 150px; /* Logo boyutu */
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
     <h1>PDF'yi İndirmek İçin QR Kodu Tarayın</h1>
     <img src="pdf_qr_code.png" alt="QR Kod">
-    <p>Veya aşağıdaki butona tıklayarak PDF'yi indirebilirsiniz:</p>
-    <a href="https://drive.google.com/file/d/1QxOOnTLhQyuwQ6ksSn7L-SAW4HWkO-TC/view?usp=drive_link" target="_blank">PDF'yi İndir</a>
+    <p>Veya aşağıdaki YASA logosuna basarak PDF'yi indirebilirsiniz:</p>
+    <a class="download-link" href="https://drive.google.com/file/d/1QxOOnTLhQyuwQ6ksSn7L-SAW4HWkO-TC/view?usp=drive_link" target="_blank">
+        <img src="images/yasa_logo.png" alt="YASA Logosu">
+    </a>
 </body>
 </html>
